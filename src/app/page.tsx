@@ -1,7 +1,9 @@
 "use client";
+import { ContactarJoffre } from "@/components/drawer-demo";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { FolderOpenIcon, HomeIcon } from "lucide-react";
+import { BriefcaseBusinessIcon, FolderOpenIcon, HomeIcon } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -78,7 +80,7 @@ export default function Home() {
         fuerte interés en aprender continuamente y compartir mis conocimientos.
         Actualmente, me desempeño como Gerente en mi propia empresa, FASTERY DEV
         S.A.S., donde lidero el desarrollo y la gestión de nuevos proyectos.
-        Además, soy miembro activo de la comunidad de {" "}
+        Además, soy miembro activo de la comunidad de{" "}
         <Badge href="https://gdg.community.dev/gdg-guayaquil/">
           <img
             alt="GDG Ecuador logomark"
@@ -193,6 +195,17 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="mx-auto justify-center flex py-4">
+        <ContactarJoffre />
+      </div>
+      <footer className="pb-2">
+        <hr className="my-3 border-gray-300 sm:mx-auto lg:my-2.5" />
+        <div className="text-center text-xs justify-between md:flex px-4">
+          <div>FASTERY-DEV S.A.S.</div>
+          <div>Privacidad | Legal | Cookies</div>
+          <div>v1.0.8</div>
+        </div>
+      </footer>
     </div>
   );
 }
