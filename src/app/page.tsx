@@ -25,9 +25,9 @@ const showToasts = async (userIp: string, device: string) => {
     toast.warning(`El dispositivo que se conectó es: ${device}`);
   }, 10000);
 
-  setTimeout(() => {
-    toast.info(`Ubicacion exacta obtenida`);
-  }, 15000);
+  // setTimeout(() => {
+  //   toast.info(`Ubicacion exacta obtenida`);
+  // }, 15000);
 
   // Muestra el cuarto toast y luego el toast de carga después de 12 segundos
   setTimeout(() => {
@@ -38,7 +38,7 @@ const showToasts = async (userIp: string, device: string) => {
 
     toast.promise(promise, {
       loading: "Cargando...",
-      success: (data) => `Información enviada al servidor de Joffre 😁`,
+      success: (data) => `Visitante registrado`,
       error: "Error",
     });
   }, 20000);
