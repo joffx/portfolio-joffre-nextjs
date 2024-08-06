@@ -9,11 +9,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
-const showToasts = async (
-  userIp: string,
-  userAgent: string,
-  device: string
-) => {
+const showToasts = async (userIp: string, device: string) => {
   // Muestra el primer toast
   toast(`¡Hola! 👋, Bienvenido a mi portafolio!`, {
     description: "Soy Joffre Veloz, voy a revisar quien eres...",
@@ -42,7 +38,7 @@ const showToasts = async (
 
     toast.promise(promise, {
       loading: "Cargando...",
-      success: (data) => `Información enviada al servidor de Joffre`,
+      success: (data) => `Información enviada al servidor de Joffre 😁`,
       error: "Error",
     });
   }, 20000);
@@ -53,7 +49,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getDataUser();
-      showToasts(data.ip, data.userAgent, data.device);
+      showToasts(data.ip, data.device);
     };
 
     fetchData();
