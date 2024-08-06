@@ -78,7 +78,7 @@ export default function Home() {
         fuerte interés en aprender continuamente y compartir mis conocimientos.
         Actualmente, me desempeño como Gerente en mi propia empresa, FASTERY DEV
         S.A.S., donde lidero el desarrollo y la gestión de nuevos proyectos.
-        Además, soy miembro activo de la comunidad de
+        Además, soy miembro activo de la comunidad de {" "}
         <Badge href="https://gdg.community.dev/gdg-guayaquil/">
           <img
             alt="GDG Ecuador logomark"
@@ -88,13 +88,13 @@ export default function Home() {
             height="16"
           />
           GDG Guayaquil
-        </Badge>
+        </Badge>{" "}
         donde se comparte conocimiento con otros profesionales y se intercambian
         experiencias en el campo de la tecnología.
         <br />
         Cuento con 4 años de experiencia en el desarrollo de software, con
         especialización en arquitectura de microservicios. Soy experto en el
-        desarrollo de aplicaciones utilizando
+        desarrollo de aplicaciones utilizando{" "}
         <Badge href="https://flutter.dev/">
           <img
             alt="Flutter logomark"
@@ -104,8 +104,8 @@ export default function Home() {
             height="14"
           />
           Flutter
-        </Badge>
-        así como en la creación de soluciones backend con
+        </Badge>{" "}
+        así como en la creación de soluciones backend con{" "}
         <Badge href="https://nestjs.com/">
           <img
             alt="Nest.js logomark"
@@ -126,7 +126,7 @@ export default function Home() {
             height="14"
           />
           Next.js
-        </Badge>
+        </Badge>{" "}
         .
       </p>
 
