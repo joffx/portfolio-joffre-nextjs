@@ -29,7 +29,9 @@ export function ContactarJoffre() {
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
-            <DrawerTitle>Contactos</DrawerTitle>
+            <DrawerTitle>
+                Hablemos de tu proyecto
+            </DrawerTitle>
             <DrawerDescription>
               Tu idea es lo más importante, cuéntame y juntos la haremos
               realidad
@@ -52,7 +54,7 @@ export function ContactarJoffre() {
             </ul>
           </div>
           <DrawerFooter>
-            <DrawerClose asChild>
+            <DrawerClose>
               <Button variant="outline" className="mb-3">Cancel</Button>
             </DrawerClose>
           </DrawerFooter>
