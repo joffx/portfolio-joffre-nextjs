@@ -31,8 +31,8 @@ export function ContactarJoffre() {
           <DrawerHeader>
             <DrawerTitle>Contactos</DrawerTitle>
             <DrawerDescription>
-              "Tu idea es lo más importante, cuéntame y juntos la haremos
-              realidad"
+              Tu idea es lo más importante, cuéntame y juntos la haremos
+              realidad
             </DrawerDescription>
           </DrawerHeader>
           <div className="px-4 pb-0 space-y-4">
