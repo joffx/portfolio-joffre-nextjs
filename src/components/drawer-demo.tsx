@@ -1,8 +1,11 @@
-import * as React from "react"
-import { BriefcaseBusinessIcon, Minus, Plus } from "lucide-react"
-import { Bar, BarChart, ResponsiveContainer } from "recharts"
+import * as React from "react";
+import {
+  BriefcaseBusinessIcon,
+  MailIcon,
+  PhoneCallIcon,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
@@ -12,125 +15,49 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
-
-const data = [
-  {
-    goal: 400,
-  },
-  {
-    goal: 300,
-  },
-  {
-    goal: 200,
-  },
-  {
-    goal: 300,
-  },
-  {
-    goal: 200,
-  },
-  {
-    goal: 278,
-  },
-  {
-    goal: 189,
-  },
-  {
-    goal: 239,
-  },
-  {
-    goal: 300,
-  },
-  {
-    goal: 200,
-  },
-  {
-    goal: 278,
-  },
-  {
-    goal: 189,
-  },
-  {
-    goal: 349,
-  },
-]
+} from "@/components/ui/drawer";
 
 export function ContactarJoffre() {
-  const [goal, setGoal] = React.useState(350)
-
-  function onClick(adjustment: number) {
-    setGoal(Math.max(200, Math.min(400, goal + adjustment)))
-  }
-
   return (
     <Drawer>
       <DrawerTrigger asChild>
-      <Button variant={"secondary"} >
-        <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
-        Contactar a Joffre
-      </Button>
+        <Button variant={"secondary"}>
+          <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
+          Contactar a Joffre
+        </Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
-            <DrawerTitle>Move Goal</DrawerTitle>
-            <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+            <DrawerTitle>Contactos</DrawerTitle>
+            <DrawerDescription>
+              "Tu idea es lo más importante, cuéntame y juntos la haremos
+              realidad"
+            </DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0">
-            <div className="flex items-center justify-center space-x-2">
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8 shrink-0 rounded-full"
-                onClick={() => onClick(-10)}
-                disabled={goal <= 200}
-              >
-                <Minus className="h-4 w-4" />
-                <span className="sr-only">Decrease</span>
-              </Button>
-              <div className="flex-1 text-center">
-                <div className="text-7xl font-bold tracking-tighter">
-                  {goal}
-                </div>
-                <div className="text-[0.70rem] uppercase text-muted-foreground">
-                  Calories/day
-                </div>
-              </div>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8 shrink-0 rounded-full"
-                onClick={() => onClick(10)}
-                disabled={goal >= 400}
-              >
-                <Plus className="h-4 w-4" />
-                <span className="sr-only">Increase</span>
-              </Button>
-            </div>
-            <div className="mt-3 h-[120px]">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={data}>
-                  <Bar
-                    dataKey="goal"
-                    style={
-                      {
-                        fill: "hsl(var(--foreground))",
-                        opacity: 0.9,
-                      } as React.CSSProperties
-                    }
-                  />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
+          <div className="px-4 pb-0 space-y-4">
+            <ul className="flex items-center space-x-4 list-none p-0">
+              <li>
+                <PhoneCallIcon className="w-5 h-5" />
+              </li>
+              <li className="w-1 h-1 bg-gray-500 rounded-full"></li>
+              <li className="text-sm font-semibold">098 006 1377</li>
+            </ul>
+            <ul className="flex items-center space-x-4 list-none p-0">
+              <li>
+                <MailIcon className="w-5 h-5" />
+              </li>
+              <li className="w-1 h-1 bg-gray-500 rounded-full"></li>
+              <li className="text-sm font-semibold">joffre.veloz@fastery.dev</li>
+            </ul>
           </div>
           <DrawerFooter>
             <DrawerClose asChild>
-              <Button variant="outline">Cancel</Button>
+              <Button variant="outline" className="mb-3">Cancel</Button>
             </DrawerClose>
           </DrawerFooter>
         </div>
       </DrawerContent>
     </Drawer>
-  )
+  );
 }
