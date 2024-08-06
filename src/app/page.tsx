@@ -120,7 +120,7 @@ export default function Home() {
         <div className="relative h-40">
           <Image
             alt="Me speaking on stage at React Summit about the future of Next.js"
-            src="/photos/ioextended.JPEG"
+            src="/photos/expo.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="relative sm:row-span-2 row-span-1">
           <Image
             alt="Me standing on stage at Reactathon delivering the keynote"
-            src="/photos/ioextended.JPEG"
+            src="/photos/vuelo.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -160,7 +160,7 @@ export default function Home() {
         <div className="relative row-span-2">
           <Image
             alt="My badge on top of a pile of badges from a Vercel meetup we held"
-            src="/photos/ioextended.JPEG"
+            src="/photos/expo2.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="relative h-40">
           <Image
             alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
-            src="/photos/ioextended.JPEG"
+            src="/photos/expo1.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
