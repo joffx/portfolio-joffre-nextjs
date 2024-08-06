@@ -54,8 +54,8 @@ export function ContactarJoffre() {
             </ul>
           </div>
           <DrawerFooter>
-            <DrawerClose>
-              <Button variant="outline" className="mb-3">Cancel</Button>
+            <DrawerClose asChild>
+              <Button variant="outline" className="mb-4">Cancel</Button>
             </DrawerClose>
           </DrawerFooter>
         </div>
