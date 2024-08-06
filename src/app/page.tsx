@@ -128,15 +128,15 @@ export default function Home() {
           />
         </div>
         <div className="relative sm:row-span-2 row-span-1">
-          <Image
-            alt="Me standing on stage at Reactathon delivering the keynote"
-            src="/photos/vuelo.jpg"
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover object-top sm:object-center"
-          />
-        </div>
+  <Image
+    alt="Me standing on stage at Reactathon delivering the keynote"
+    src="/photos/vuelo2.JPEG"
+    fill
+    sizes="(max-width: 768px) 213px, 33vw"
+    priority
+    className="rounded-lg object-cover object-bottom sm:object-center"
+  />
+</div>
         <div className="relative">
           <Image
             alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
