@@ -15,6 +15,6 @@ export const getDataUser = async (): Promise<{
   return {
     ip: headers().get("x-real-ip") ?? "Unknown",
     userAgent: userAgent,
-    device: result.device.model || result.os.name || "Unknown", // Puedes personalizar esto según tus necesidades
+    device: `${result.device.model || "Unknown"} (${result.os.name || "Unknown"})`,
   };
 };
