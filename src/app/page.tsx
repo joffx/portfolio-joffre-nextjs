@@ -73,12 +73,12 @@ export default function Home() {
         </div>
       </div>
       <div className="text-xl font-bold pb-2">¡Hola, Soy Joffre Veloz!</div>
-      <p className="text-justify text-muted-foreground">
+      <p className="text-muted-foreground">
         Soy un apasionado de la tecnología y el desarrollo de software, con un
         fuerte interés en aprender continuamente y compartir mis conocimientos.
-        Actualmente, me desempeño como Gerente en mi propia empresa FASTERY DEV
-        S.A.S, donde lidero el desarrollo y la gestión de nuevos proyectos.
-        Además, soy miembro activo de la comunidad de{" "}
+        Actualmente, me desempeño como Gerente en mi propia empresa, FASTERY DEV
+        S.A.S., donde lidero el desarrollo y la gestión de nuevos proyectos.
+        Además, soy miembro activo de la comunidad de
         <Badge href="https://gdg.community.dev/gdg-guayaquil/">
           <img
             alt="GDG Ecuador logomark"
@@ -94,7 +94,7 @@ export default function Home() {
         <br />
         Cuento con 4 años de experiencia en el desarrollo de software, con
         especialización en arquitectura de microservicios. Soy experto en el
-        desarrollo de aplicaciones utilizando{" "}
+        desarrollo de aplicaciones utilizando
         <Badge href="https://flutter.dev/">
           <img
             alt="Flutter logomark"
@@ -105,7 +105,7 @@ export default function Home() {
           />
           Flutter
         </Badge>
-        , así como en la creación de soluciones backend con{" "}
+        , así como en la creación de soluciones backend con
         <Badge href="https://nestjs.com/">
           <img
             alt="Nest.js logomark"
@@ -116,7 +116,7 @@ export default function Home() {
           />
           Nest.js
         </Badge>{" "}
-        y frontend con{" "}
+        y frontend con
         <Badge href="https://nextjs.org">
           <img
             alt="Next.js logomark"
@@ -129,6 +129,7 @@ export default function Home() {
         </Badge>
         .
       </p>
+
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
           <Image
