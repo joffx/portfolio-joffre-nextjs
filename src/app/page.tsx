@@ -42,7 +42,7 @@ export default function Home() {
   }
 
   return (
-    <div className="px-3 py-5 max-w-[59rem] mx-auto">
+    <div className="px-4 py-5 max-w-[59rem] mx-auto">
       <div
         className={`transition-opacity duration-500 ease-in-out transform ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
@@ -91,7 +91,7 @@ export default function Home() {
             height="14"
           />
           Flutter
-        </Badge>{" "}
+        </Badge>
         , así como en la creación de soluciones backend con{" "}
         <Badge href="https://nestjs.com/">
           <img
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="relative h-40">
           <Image
             alt="Me speaking on stage at React Summit about the future of Next.js"
-            src='/icons/flutter-logo.svg'
+            src="/photos/ioextended.JPEG"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="relative sm:row-span-2 row-span-1">
           <Image
             alt="Me standing on stage at Reactathon delivering the keynote"
-            src='/icons/flutter-logo.svg'
+            src="/photos/ioextended.JPEG"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -140,7 +140,7 @@ export default function Home() {
         <div className="relative">
           <Image
             alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
-            src='/icons/flutter-logo.svg'
+            src="/photos/ioextended.JPEG"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -150,7 +150,7 @@ export default function Home() {
         <div className="relative row-span-2">
           <Image
             alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
-            src='/icons/flutter-logo.svg'
+            src="/photos/ioextended.JPEG"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -160,7 +160,7 @@ export default function Home() {
         <div className="relative row-span-2">
           <Image
             alt="My badge on top of a pile of badges from a Vercel meetup we held"
-            src='/icons/flutter-logo.svg'
+            src="/photos/ioextended.JPEG"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="relative h-40">
           <Image
             alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
-            src='/icons/flutter-logo.svg'
+            src="/photos/ioextended.JPEG"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
