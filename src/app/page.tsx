@@ -26,7 +26,7 @@ const showToasts = async (userIp: string, device: string) => {
   }, 10000);
 
   setTimeout(() => {
-    toast.info(`Ubicacion exacta obtenida.`);
+    toast.info(`Ubicacion exacta obtenida`);
   }, 15000);
 
   // Muestra el cuarto toast y luego el toast de carga después de 12 segundos
