@@ -9,44 +9,43 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
+const showToasts = async (userIp: string, userAgent: string, device: string) => {
+  // Muestra el primer toast
+  toast(`¡Hola! 👋, Bienvenido a mi portafolio!`, {
+    description: "Soy Joffre Veloz, voy a revisar quien eres...",
+  });
+
+  // Muestra el segundo toast después de 4 segundos
+  setTimeout(() => {
+    toast.warning(`Gracias por conectarte a la IP ${userIp}`);
+  }, 4000);
+
+  // Muestra el tercer toast después de 8 segundos
+  setTimeout(() => {
+    toast.warning(`El dispositivo que se conectó es: ${device}`);
+  }, 8000);
+
+  // Muestra el cuarto toast y luego el toast de carga después de 12 segundos
+  setTimeout(() => {
+    const promise = () =>
+      new Promise((resolve) =>
+        setTimeout(() => resolve({ name: "Sonner" }), 2000)
+      );
+
+    toast.promise(promise, {
+      loading: "Cargando...",
+      success: (data) => `Información enviada al servidor de Joffre`,
+      error: "Error",
+    });
+  }, 12000);
+};
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
-  const showToasts = async (userIp: string, userAgent: string) => {
-    // Muestra el primer toast
-    toast(`¡Hola! 👋, Bienvenido a mi portafolio!`, {
-      description: "Soy Joffre Veloz, voy a revisar quien eres...",
-    });
-
-    // Muestra el segundo toast después de 4 segundos
-    setTimeout(() => {
-      toast.warning(`Gracias por conectarte con la IP ${userIp}`, {
-      });
-    }, 4000);
-
-    // Muestra el tercer toast después de 8 segundos
-    setTimeout(() => {
-      toast.warning(`El dispositivo que se conectó es: ${userAgent}`);
-    }, 8000);
-
-    // Muestra el cuarto toast y luego el toast de carga después de 12 segundos
-    setTimeout(() => {
-      const promise = () =>
-        new Promise((resolve) =>
-          setTimeout(() => resolve({ name: "Sonner" }), 2000)
-        );
-
-      toast.promise(promise, {
-        loading: "Cargando...",
-        success: (data) => `Información enviada al servidor de Joffre`,
-        error: "Error",
-      });
-    }, 12000);
-  };
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await getDataUser();
-      showToasts(data.ip, data.userAgent);
+      showToasts(data.ip, data.userAgent, data.device);
     };
 
     fetchData();
