@@ -1,4 +1,5 @@
 "use client";
+import { getDataUser } from "@/actions/conection-data";
 import { ContactarJoffre } from "@/components/drawer-demo";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -10,27 +11,24 @@ import { toast } from "sonner";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
-  const showToasts = () => {
+  const showToasts = async (userIp: string, userAgent: string) => {
     // Muestra el primer toast
+    toast(`¡Hola! 👋, Bienvenido a mi portafolio!`, {
+      description: "Soy Joffre Veloz, voy a revisar quien eres...",
+    });
+
+    // Muestra el segundo toast después de 4 segundos
     setTimeout(() => {
-      toast.message(`¡Hola! 👋, Bienvenido a mi portafolio!`,{
-        description: "Soy Joffre Veloz, voy a revisar quien eres...",
+      toast.warning(`Gracias por conectarte a la IP ${userIp}`, {
       });
     }, 4000);
 
-    // Muestra el segundo toast después de 2 segundos
+    // Muestra el tercer toast después de 8 segundos
     setTimeout(() => {
-      const userIp = "XXX.XXX.XXX.XXX"; // Reemplaza con la IP del usuario
-      toast.warning(`Gracias por conectarte a la IP ${userIp}`);
-    }, 6000);
+      toast.warning(`El dispositivo que se conectó es: ${userAgent}`);
+    }, 8000);
 
-    // Muestra el tercer toast después de 4 segundos
-    setTimeout(() => {
-      const deviceInfo = "Dispositivo XYZ"; // Reemplaza con el dispositivo del usuario
-      toast.warning(`El dispositivo que se conectó es: ${deviceInfo}`);
-    }, 10000);
-
-    // Muestra el cuarto toast después de 6 segundos y luego el toast de carga
+    // Muestra el cuarto toast y luego el toast de carga después de 12 segundos
     setTimeout(() => {
       const promise = () =>
         new Promise((resolve) =>
@@ -39,14 +37,19 @@ export default function Home() {
 
       toast.promise(promise, {
         loading: "Cargando...",
-        success: (data:any) => `Información enviado al servidor de Joffre`,
+        success: (data) => `Información enviada al servidor de Joffre`,
         error: "Error",
       });
-    }, 13000);
+    }, 12000);
   };
 
   useEffect(() => {
-    showToasts();
+    const fetchData = async () => {
+      const data = await getDataUser();
+      showToasts(data.ip, data.userAgent);
+    };
+
+    fetchData();
   }, []);
 
   function Badge(props: any) {
