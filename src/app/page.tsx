@@ -92,6 +92,7 @@ export default function Home() {
         donde se comparte conocimiento con otros profesionales y se intercambian
         experiencias en el campo de la tecnología.
         <br />
+        <br />
         Cuento con 4 años de experiencia en el desarrollo de software, con
         especialización en arquitectura de microservicios. Soy experto en el
         desarrollo de aplicaciones utilizando{" "}
@@ -116,7 +117,7 @@ export default function Home() {
           />
           Nest.js
         </Badge>{" "}
-        y frontend con
+        y frontend con{" "}
         <Badge href="https://nextjs.org">
           <img
             alt="Next.js logomark"
