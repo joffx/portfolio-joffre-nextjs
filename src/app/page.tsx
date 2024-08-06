@@ -150,7 +150,7 @@ export default function Home() {
         <div className="relative row-span-2">
           <Image
             alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
-            src="/photos/ioextended.JPEG"
+            src="/photos/yo.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
