@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </Card>
       </div>
-      <div className="pt-4 flex my-auto">
+      <div className="py-5 flex my-auto">
         <Avatar className="w-16 h-16 m-2">
           <AvatarImage
             src="https://avatars.githubusercontent.com/u/52367350"
