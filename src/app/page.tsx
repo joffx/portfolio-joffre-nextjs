@@ -78,6 +78,19 @@ export default function Home() {
         fuerte interés en aprender continuamente y compartir mis conocimientos.
         Actualmente, me desempeño como Gerente en mi propia empresa FASTERY DEV
         S.A.S, donde lidero el desarrollo y la gestión de nuevos proyectos.
+        Además, soy miembro activo de la comunidad de{" "}
+        <Badge href="https://gdg.community.dev/gdg-guayaquil/">
+          <img
+            alt="GDG Ecuador logomark"
+            src="/icons/gdg-logo.png"
+            className="!mr-1"
+            width="16"
+            height="16"
+          />
+          GDG Guayaquil
+        </Badge>
+        , donde se comparte conocimiento con otros profesionales y se
+        intercambian experiencias en el campo de la tecnología.
         <br />
         Cuento con 4 años de experiencia en el desarrollo de software, con
         especialización en arquitectura de microservicios. Soy experto en el
@@ -128,15 +141,15 @@ export default function Home() {
           />
         </div>
         <div className="relative sm:row-span-2 row-span-1">
-  <Image
-    alt="Me standing on stage at Reactathon delivering the keynote"
-    src="/photos/vuelo2.JPEG"
-    fill
-    sizes="(max-width: 768px) 213px, 33vw"
-    priority
-    className="rounded-lg object-cover object-bottom sm:object-center"
-  />
-</div>
+          <Image
+            alt="Me standing on stage at Reactathon delivering the keynote"
+            src="/photos/vuelo2.JPEG"
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover object-bottom sm:object-center"
+          />
+        </div>
         <div className="relative">
           <Image
             alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
