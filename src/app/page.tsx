@@ -10,33 +10,41 @@ import { toast } from "sonner";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
-  const test = () => {
-    toast("¡Hola! 👋");
+  const showToasts = () => {
+    // Muestra el primer toast
+    setTimeout(() => {
+      toast(`¡Hola! 👋`);
+    }, 1000);
+
+    // Muestra el segundo toast después de 2 segundos
+    setTimeout(() => {
+      const userIp = "XXX.XXX.XXX.XXX"; // Reemplaza con la IP del usuario
+      toast(`Gracias por conectarte a la IP ${userIp}`);
+    }, 3000);
+
+    // Muestra el tercer toast después de 4 segundos
+    setTimeout(() => {
+      const deviceInfo = "Dispositivo XYZ"; // Reemplaza con el dispositivo del usuario
+      toast(`El dispositivo que se conectó es: ${deviceInfo}`);
+    }, 6000);
+
+    // Muestra el cuarto toast después de 6 segundos y luego el toast de carga
+    setTimeout(() => {
+      const promise = () =>
+        new Promise((resolve) =>
+          setTimeout(() => resolve({ name: "Sonner" }), 2000)
+        );
+
+      toast.promise(promise, {
+        loading: "Cargando...",
+        success: (data:any) => `Información enviado al servidor de Joffre`,
+        error: "Error",
+      });
+    }, 9000);
   };
 
   useEffect(() => {
-    test();
-    
-    let lastScrollTop = 0;
-
-    const handleScroll = () => {
-      const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollTop > lastScrollTop) {
-        // Hacia abajo
-        setIsVisible(false);
-      } else {
-        // Hacia arriba
-        setIsVisible(true);
-      }
-      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Para móviles o desplazamiento negativo
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    showToasts();
   }, []);
 
   function Badge(props: any) {
