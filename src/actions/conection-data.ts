@@ -12,9 +12,12 @@ export const getDataUser = async (): Promise<{
   const parser = new UAParser(userAgent);
   const result = parser.getResult();
 
+  // Aquí se extrae y formatea la información del dispositivo
+  const device = result.device.model || `${result.os.name || "Unknown"} ${result.os.version || ""}`;
+
   return {
     ip: headers().get("x-real-ip") ?? "Unknown",
     userAgent: userAgent,
-    device: `${result.device.model || "Unknown"} (${result.os.name || "Unknown"})`,
+    device: device,
   };
 };
