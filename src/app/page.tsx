@@ -41,7 +41,7 @@ const showToasts = async (userIp: string, device: string) => {
       success: (data) => `Visitante registrado`,
       error: "Error",
     });
-  }, 20000);
+  }, 15000);
 };
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
