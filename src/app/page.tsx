@@ -17,7 +17,7 @@ const showToasts = async (userIp: string, userAgent: string, device: string) => 
 
   // Muestra el segundo toast después de 4 segundos
   setTimeout(() => {
-    toast.warning(`Gracias por conectarte a la IP ${userIp}`);
+    toast.warning(`Gracias por conectarte con la IP ${userIp}`);
   }, 4000);
 
   // Muestra el tercer toast después de 8 segundos
