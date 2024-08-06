@@ -89,8 +89,8 @@ export default function Home() {
           />
           GDG Guayaquil
         </Badge>
-        , donde se comparte conocimiento con otros profesionales y se
-        intercambian experiencias en el campo de la tecnología.
+        donde se comparte conocimiento con otros profesionales y se intercambian
+        experiencias en el campo de la tecnología.
         <br />
         Cuento con 4 años de experiencia en el desarrollo de software, con
         especialización en arquitectura de microservicios. Soy experto en el
@@ -105,7 +105,7 @@ export default function Home() {
           />
           Flutter
         </Badge>
-        , así como en la creación de soluciones backend con
+        así como en la creación de soluciones backend con
         <Badge href="https://nestjs.com/">
           <img
             alt="Nest.js logomark"
