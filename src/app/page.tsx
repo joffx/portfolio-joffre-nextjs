@@ -6,11 +6,17 @@ import { Card } from "@/components/ui/card";
 import { BriefcaseBusinessIcon, FolderOpenIcon, HomeIcon } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
+  const test = () => {
+    toast("¡Hola! 👋");
+  };
 
   useEffect(() => {
+    test();
+    
     let lastScrollTop = 0;
 
     const handleScroll = () => {
