@@ -30,7 +30,7 @@ export function ContactarJoffre() {
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
             <DrawerTitle>
-                Hablemos de tu proyecto
+                Hablemos de tu empresa
             </DrawerTitle>
             <DrawerDescription>
               Tu idea es lo más importante, cuéntame y juntos la haremos
