@@ -54,9 +54,9 @@ export default function Home() {
           <div className="pl-2">
             <HomeIcon className="w-6 h-6" />
           </div>
-          <div className="pl-2">
+          {/* <div className="pl-2">
             <FolderOpenIcon className="w-6 h-6" />
-          </div>
+          </div> */}
         </Card>
       </div>
       <div className="py-5 flex my-auto">
