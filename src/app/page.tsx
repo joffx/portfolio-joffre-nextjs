@@ -16,19 +16,19 @@ export default function Home() {
       toast.message(`¡Hola! 👋, Bienvenido a mi portafolio!`,{
         description: "Soy Joffre Veloz, voy a revisar quien eres...",
       });
-    }, 2000);
+    }, 4000);
 
     // Muestra el segundo toast después de 2 segundos
     setTimeout(() => {
       const userIp = "XXX.XXX.XXX.XXX"; // Reemplaza con la IP del usuario
       toast.warning(`Gracias por conectarte a la IP ${userIp}`);
-    }, 4000);
+    }, 6000);
 
     // Muestra el tercer toast después de 4 segundos
     setTimeout(() => {
       const deviceInfo = "Dispositivo XYZ"; // Reemplaza con el dispositivo del usuario
       toast.warning(`El dispositivo que se conectó es: ${deviceInfo}`);
-    }, 8000);
+    }, 10000);
 
     // Muestra el cuarto toast después de 6 segundos y luego el toast de carga
     setTimeout(() => {
@@ -42,7 +42,7 @@ export default function Home() {
         success: (data:any) => `Información enviado al servidor de Joffre`,
         error: "Error",
       });
-    }, 11000);
+    }, 13000);
   };
 
   useEffect(() => {
