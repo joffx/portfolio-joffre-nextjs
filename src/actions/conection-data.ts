@@ -8,16 +8,16 @@ export const getDataUser = async (): Promise<{
   userAgent: string;
   device: string;
 }> => {
-  const userAgent = headers().get("user-agent") ?? "Unknown";
+  const userAgent = headers().get("user-agent") ?? "";
   const parser = new UAParser(userAgent);
   const result = parser.getResult();
 
   // Formatear el dispositivo y el sistema operativo
-  const device = result.device.model ? result.device.model : "Unknown Device";
-  const os = result.os.name ? `${result.os.name} ${result.os.version || ""}` : "Unknown OS";
+  const device = result.device.model ? result.device.model : "";
+  const os = result.os.name ? `${result.os.name} ${result.os.version || ""}` : "";
 
   return {
-    ip: headers().get("x-real-ip") ?? "Unknown",
+    ip: headers().get("x-real-ip") ?? "",
     userAgent: userAgent,
     device: `${device} (${os})`,
   };
