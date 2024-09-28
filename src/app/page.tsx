@@ -117,7 +117,7 @@ export default function Home() {
         experiencias en el campo de la tecnología.
         <br />
         <br />
-        Cuento con 4 años de experiencia en el desarrollo de software, con
+        Cuento con +3 años de experiencia en el desarrollo de software, con
         especialización en arquitectura de microservicios. Soy experto en el
         desarrollo de aplicaciones utilizando{" "}
         <Badge href="https://flutter.dev/">
