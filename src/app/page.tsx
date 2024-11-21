@@ -41,7 +41,7 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-screen">
         <div className="px-4 py-5 max-w-[59rem] mx-auto">
           <NavbarHome />
-          <div className="py-5 flex my-auto pt-10">
+          <div className="py-5 flex my-auto pt-16">
             <Avatar className="w-16 h-16 m-2">
               <AvatarImage
                 src="https://avatars.githubusercontent.com/u/52367350"
