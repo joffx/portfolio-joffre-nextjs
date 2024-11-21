@@ -7,7 +7,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-dropdown-menu";
-import { BriefcaseBusinessIcon, FolderOpenIcon, HomeIcon } from "lucide-react";
+import {
+  BriefcaseBusinessIcon,
+  Code2Icon,
+  FolderOpenIcon,
+  HomeIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -175,6 +180,36 @@ export default function Home() {
                 priority
                 className="rounded-lg object-cover"
               />
+            </div>
+          </div>
+          <div>
+            <div className="flex font-semibold text-xl my-auto">
+              <Code2Icon className="w-6 h-6 mr-2 my-auto" />
+              <span className="my-auto">Contratos</span>
+            </div>
+            <div className="grid xl:grid-cols-2 grid-cols-1 gap-4">
+              <Card className="p-4 my-4 bg-muted">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
+                    <span className="font-semibold">FASTERY DEV S.A.S.</span>
+                  </div>
+                  <Button className="bg-primary rounded-lg text-primary-foreground">
+                    Descargar
+                  </Button>
+                </div>
+              </Card>
+              <Card className="p-4 my-4 bg-muted">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
+                    <span className="font-semibold">FASTERY DEV S.A.S.</span>
+                  </div>
+                  <Button className="bg-primary rounded-lg text-primary-foreground">
+                    Descargar
+                  </Button>
+                </div>
+              </Card>
             </div>
           </div>
           <div className="mx-auto justify-center flex py-4">

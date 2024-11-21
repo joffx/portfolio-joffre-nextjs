@@ -43,7 +43,7 @@ export function ContactarJoffre() {
                 <PhoneCallIcon className="w-5 h-5" />
               </li>
               <li className="w-1 h-1 bg-gray-500 rounded-full"></li>
-              <li className="text-sm font-semibold">098 006 1377</li>
+              <li className="text-sm font-semibold">+593 98 646 3997</li>
             </ul>
             <ul className="flex items-center space-x-4 list-none p-0">
               <li>
