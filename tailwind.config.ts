@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'grid-pattern': `linear-gradient(rgb(21, 23, 22) 1px, transparent 1px),
+                         linear-gradient(to right, rgb(21, 23, 22) 1px, transparent 1px)`,
+      },
+      backgroundSize: {
+        'grid': '40px 40px', // Tamaño de las celdas del patrón
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
