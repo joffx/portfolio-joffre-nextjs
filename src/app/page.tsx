@@ -45,19 +45,19 @@ export default function Home() {
             <Avatar className="w-16 h-16 m-2">
               <AvatarImage
                 src="https://avatars.githubusercontent.com/u/52367350"
-                alt="@shadcn"
+                alt="Joffre Andres Veloz"
               />
               <AvatarFallback>JV</AvatarFallback>
             </Avatar>
             <div className="my-auto p-2">
               <div className="text-2xl font-semibold">Joffre Andres Veloz</div>
-              <div className="text-muted-foreground">
+              <div className="text-muted-foreground xl:text-base text-sm">
                 Full Stack Developer | CEO de Fastery.dev | Innovación y
                 Eficiencia en Desarrollo Web y Móvil
               </div>
             </div>
           </div>
-          <p>
+          <p className="text-justify">
             Soy un apasionado de la tecnología y el desarrollo de software, con
             un fuerte interés en aprender continuamente y compartir mis
             conocimientos. Actualmente, me desempeño como Gerente en mi propia
