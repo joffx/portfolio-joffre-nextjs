@@ -1,58 +1,30 @@
 "use client";
 import { getDataUser } from "@/actions/conection-data";
 import { ContactarJoffre } from "@/components/drawer-demo";
+import NavbarHome from "@/components/home/navbar";
+import { ModeToggle } from "@/components/mode-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Separator } from "@radix-ui/react-dropdown-menu";
 import { BriefcaseBusinessIcon, FolderOpenIcon, HomeIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
-const showToasts = async (userIp: string, device: string) => {
-  // Muestra el primer toast
-  toast(`¡Hola! 👋, Bienvenido a mi portafolio!`, {
-    description: "Soy Joffre Veloz, voy a revisar quien eres...",
-  });
 
-  // Muestra el segundo toast después de 4 segundos
+const showToasts = async () => {
   setTimeout(() => {
-    toast.warning(`Gracias por conectarte con la IP ${userIp}`);
+    toast(`👋 ¡Hola! Bienvenido a mi portafolio 🌟`);
   }, 5000);
-
-  // Muestra el tercer toast después de 8 segundos
-  setTimeout(() => {
-    toast.warning(`El dispositivo que se conectó es: ${device}`);
-  }, 10000);
-
-  // setTimeout(() => {
-  //   toast.info(`Ubicacion exacta obtenida`);
-  // }, 15000);
-
-  // Muestra el cuarto toast y luego el toast de carga después de 12 segundos
-  setTimeout(() => {
-    const promise = () =>
-      new Promise((resolve) =>
-        setTimeout(() => resolve({ name: "Sonner" }), 2000)
-      );
-
-    toast.promise(promise, {
-      loading: "Cargando...",
-      success: (data) => `Visitante registrado`,
-      error: "Error",
-    });
-  }, 15000);
 };
+
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await getDataUser();
-      showToasts(data.ip, data.device);
-    };
-
-    fetchData();
+    showToasts();
   }, []);
 
   function Badge(props: any) {
@@ -67,21 +39,8 @@ export default function Home() {
 
   return (
     <div className="px-4 py-5 max-w-[59rem] mx-auto">
-      <div
-        className={`transition-opacity duration-500 ease-in-out transform ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
-        }`}
-      >
-        <Card className="px-4 py-3 bg-muted rounded-3xl flex space-x-4">
-          <div className="pl-2">
-            <HomeIcon className="w-6 h-6" />
-          </div>
-          {/* <div className="pl-2">
-            <FolderOpenIcon className="w-6 h-6" />
-          </div> */}
-        </Card>
-      </div>
-      <div className="py-5 flex my-auto">
+      <NavbarHome />
+      <div className="py-5 flex my-auto pt-16">
         <Avatar className="w-16 h-16 m-2">
           <AvatarImage
             src="https://avatars.githubusercontent.com/u/52367350"
@@ -222,12 +181,24 @@ export default function Home() {
       </div>
       <footer className="pb-2">
         <hr className="my-3 border-gray-300 sm:mx-auto lg:my-2.5" />
-        <div className="text-center text-xs justify-between md:flex px-4">
-          <div>FASTERY-DEV S.A.S.</div>
-          <div>Privacidad | Legal | Cookies</div>
-          <div>v1.0.8</div>
+        <div className="grid xl:grid-cols-3 grid-cols-1 text-xs gap-1">
+          <div className="italic grid grid-cols-1 order-2 xl:order-1 text-center xl:text-start">
+            <Link href="https://fastery.dev" target="_blank">
+              <div>Developed by</div>
+              <div>Fastery.dev</div>
+            </Link>
+          </div>
+          <div className="text-center order-1 xl:order-2">
+            Privacidad | Legal | Cookies
+          </div>
+          <div className="order-3 xl:order-3 text-center xl:text-end">
+            v1.0.8
+          </div>
         </div>
       </footer>
+      <div className="justify-center  flex">
+        <ModeToggle />
+      </div>
     </div>
   );
 }
