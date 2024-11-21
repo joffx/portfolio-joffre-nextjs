@@ -11,7 +11,6 @@ import {
   HomeIcon,
   NewspaperIcon,
 } from "lucide-react";
-import { Separator } from "@radix-ui/react-dropdown-menu";
 import { Card } from "../ui/card";
 
 export default function NavbarHome() {
