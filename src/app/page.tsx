@@ -44,7 +44,7 @@ export default function Home() {
       <a
         {...props}
         target="_blank"
-        className="inline-flex items-center rounded-xl border border-neutral-200 bg-black px-2 py-1 mx-0.5 text-sm leading-4  no-underline dark:border-neutral-700 dark:bg-black text-white font-semibold "
+        className="inline-flex items-center rounded-xl border border-neutral-200 bg-black px-2 py-1 mx-1 text-sm leading-4  no-underline dark:border-neutral-700 dark:bg-black text-white font-semibold "
       />
     );
   }
@@ -92,7 +92,7 @@ export default function Home() {
             <br />
             Cuento con +3 años de experiencia en el desarrollo de software, con
             especialización en arquitectura de microservicios. Soy experto en el
-            desarrollo de aplicaciones utilizando{" "}
+            desarrollo de aplicaciones utilizando
             <Badge href="https://flutter.dev/">
               <img
                 alt="Flutter logomark"
@@ -102,8 +102,8 @@ export default function Home() {
                 height="14"
               />
               Flutter
-            </Badge>{" "}
-            así como en la creación de soluciones backend con{" "}
+            </Badge>
+            así como en la creación de soluciones backend con
             <Badge href="https://nestjs.com/">
               <img
                 alt="Nest.js logomark"
@@ -113,8 +113,8 @@ export default function Home() {
                 height="14"
               />
               Nest.js
-            </Badge>{" "}
-            y frontend con{" "}
+            </Badge>
+            y frontend con
             <Badge href="https://nextjs.org">
               <img
                 alt="Next.js logomark"
@@ -124,7 +124,7 @@ export default function Home() {
                 height="14"
               />
               Next.js
-            </Badge>{" "}
+            </Badge>
             .
           </p>
           <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
