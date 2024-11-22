@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portafolio - Joffre Veloz",
-  description: "Portafolio - Joffre Veloz",
+  title: "Joffre Andres Veloz Pazmiño 🧑‍💻",
+  description: "Joffre Andres Veloz Pazmiño 🧑‍💻"
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>
+      <body  >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

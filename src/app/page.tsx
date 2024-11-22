@@ -6,12 +6,20 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import {
+  BookmarkIcon,
   BriefcaseBusinessIcon,
   Code2Icon,
+  ExternalLinkIcon,
   FolderOpenIcon,
   HomeIcon,
+  PackageIcon,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -119,7 +127,6 @@ export default function Home() {
             </Badge>{" "}
             .
           </p>
-
           <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
             <div className="relative h-40">
               <Image
@@ -184,30 +191,116 @@ export default function Home() {
           </div>
           <div>
             <div className="flex font-semibold text-xl my-auto">
-              <Code2Icon className="w-6 h-6 mr-2 my-auto" />
-              <span className="my-auto">Contratos</span>
+              <BookmarkIcon className="w-6 h-6 mr-2 my-auto" />
+              <span className="my-auto">Ultimos Proyectos</span>
             </div>
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-4">
-              <Card className="p-4 my-4 bg-muted">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
-                    <span className="font-semibold">FASTERY DEV S.A.S.</span>
+              <Card className="p-4 my-3 bg-muted">
+                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3">
+                  <Carousel
+                    opts={{
+                      align: "start",
+                      loop: true,
+                      duration: 500,
+                    }}
+                  >
+                    <CarouselContent>
+                      <CarouselItem>
+                        <Image
+                          className="rounded-md w-full"
+                          src="/port/grupocazacargo.png"
+                          width={200}
+                          height={200}
+                          alt="grupocazacargo"
+                        />
+                      </CarouselItem>
+                      <CarouselItem>
+                        <Image
+                          className="rounded-md w-full"
+                          src="/port/grupocazacargo1.png"
+                          width={200}
+                          height={200}
+                          alt="grupocazacargo"
+                        />
+                      </CarouselItem>
+                    </CarouselContent>
+                  </Carousel>
+                  <div>
+                    <span className="flex my-1">
+                      <PackageIcon className="w-5 h-5 mr-1 my-auto" />
+                      <span className="font-semibold my-auto">
+                        Grupo Cazacargo
+                      </span>
+                    </span>
+                    <p className="text-muted-foreground text-sm">
+                      Plataforma empresarial para la gestión de carga y
+                      seguimiento de envíos.
+                    </p>
+                    <div className="flex justify-end">
+                      <Link
+                        href="https://sistema.grupocazacargo.com"
+                        target="_blank"
+                      >
+                        <Button variant={"outline"} size={"icon"}>
+                          <ExternalLinkIcon className="w-4 h-4" />
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
-                  <Button className="bg-primary rounded-lg text-primary-foreground">
-                    Descargar
-                  </Button>
                 </div>
               </Card>
-              <Card className="p-4 my-4 bg-muted">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
-                    <span className="font-semibold">FASTERY DEV S.A.S.</span>
+              <Card className="p-4 my-3 bg-muted">
+                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3">
+                  <Carousel
+                    opts={{
+                      align: "start",
+                      loop: true,
+                      duration: 500,
+                    }}
+                  >
+                    <CarouselContent>
+                      <CarouselItem>
+                        <Image
+                          className="rounded-md w-full"
+                          src="/port/grupocazacargo.png"
+                          width={200}
+                          height={200}
+                          alt="grupocazacargo"
+                        />
+                      </CarouselItem>
+                      <CarouselItem>
+                        <Image
+                          className="rounded-md w-full"
+                          src="/port/grupocazacargo1.png"
+                          width={200}
+                          height={200}
+                          alt="grupocazacargo"
+                        />
+                      </CarouselItem>
+                    </CarouselContent>
+                  </Carousel>
+                  <div>
+                    <span className="flex my-1">
+                      <PackageIcon className="w-5 h-5 mr-1 my-auto" />
+                      <span className="font-semibold my-auto">
+                        Grupo Cazacargo
+                      </span>
+                    </span>
+                    <p className="text-muted-foreground text-sm">
+                      Plataforma empresarial para la gestión de carga y
+                      seguimiento de envíos.
+                    </p>
+                    <div className="flex justify-end">
+                      <Link
+                        href="https://sistema.grupocazacargo.com"
+                        target="_blank"
+                      >
+                        <Button variant={"outline"} size={"icon"}>
+                          <ExternalLinkIcon className="w-4 h-4" />
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
-                  <Button className="bg-primary rounded-lg text-primary-foreground">
-                    Descargar
-                  </Button>
                 </div>
               </Card>
             </div>
