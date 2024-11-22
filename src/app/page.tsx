@@ -44,7 +44,7 @@ export default function Home() {
       <a
         {...props}
         target="_blank"
-        className="inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 no-underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100"
+        className="inline-flex items-center rounded-xl border border-neutral-200 bg-black px-2 py-1 mx-0.5 text-sm leading-4  no-underline dark:border-neutral-700 dark:bg-black text-white font-semibold "
       />
     );
   }
@@ -70,12 +70,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className="text-justify">
+          <p className="text-justify text-muted-foreground text-sm">
             Soy un apasionado de la tecnología y el desarrollo de software, con
             un fuerte interés en aprender continuamente y compartir mis
             conocimientos. Actualmente, me desempeño como Gerente en mi propia
             empresa, FASTERY DEV S.A.S., donde lidero el desarrollo y la gestión
-            de nuevos proyectos. Además, soy miembro activo de la comunidad de{" "}
+            de nuevos proyectos. Además, soy miembro activo de la comunidad de
             <Badge href="https://gdg.community.dev/gdg-guayaquil/">
               <img
                 alt="GDG Ecuador logomark"
@@ -85,7 +85,7 @@ export default function Home() {
                 height="16"
               />
               GDG Guayaquil
-            </Badge>{" "}
+            </Badge>
             donde se comparte conocimiento con otros profesionales y se
             intercambian experiencias en el campo de la tecnología.
             <br />
