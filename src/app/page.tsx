@@ -195,8 +195,8 @@ export default function Home() {
               <span className="my-auto">Ultimos Proyectos</span>
             </div>
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-4">
-              <Card className="p-4 my-3 bg-muted">
-                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3">
+              <Card className="p-4 my-3 bg-muted mb-auto">
+                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
                   <Carousel
                     opts={{
                       align: "start",
@@ -227,12 +227,12 @@ export default function Home() {
                   </Carousel>
                   <div>
                     <span className="flex my-1">
-                      <PackageIcon className="w-5 h-5 mr-1 my-auto" />
-                      <span className="font-semibold my-auto">
+                      <Image src="/port/logo1.webp" width={35} height={35} alt="logo1" className="mr-2 my-auto" />
+                      <span className="font-bold my-auto text-lg" style={{ color: '#1d4e9e' }}>
                         Grupo Cazacargo
                       </span>
                     </span>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-sm pt-1">
                       Plataforma empresarial para la gestión de carga y
                       seguimiento de envíos.
                     </p>
@@ -249,8 +249,8 @@ export default function Home() {
                   </div>
                 </div>
               </Card>
-              <Card className="p-4 my-3 bg-muted">
-                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3">
+              <Card className="p-4 my-3 bg-muted mb-auto">
+                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
                   <Carousel
                     opts={{
                       align: "start",
@@ -262,37 +262,33 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="rounded-md w-full"
-                          src="/port/grupocazacargo.png"
+                          src="/port/reg1.png"
                           width={200}
                           height={200}
-                          alt="grupocazacargo"
+                          alt="reg1"
                         />
                       </CarouselItem>
                       <CarouselItem>
                         <Image
                           className="rounded-md w-full"
-                          src="/port/grupocazacargo1.png"
+                          src="/port/reg2.png"
                           width={200}
                           height={200}
-                          alt="grupocazacargo"
+                          alt="reg2"
                         />
                       </CarouselItem>
                     </CarouselContent>
                   </Carousel>
                   <div>
                     <span className="flex my-1">
-                      <PackageIcon className="w-5 h-5 mr-1 my-auto" />
-                      <span className="font-semibold my-auto">
-                        Grupo Cazacargo
-                      </span>
+                      <Image src="/port/log_reg.webp" width={125} height={125} alt="log_reg" className="mr-2 my-auto" />
                     </span>
-                    <p className="text-muted-foreground text-sm">
-                      Plataforma empresarial para la gestión de carga y
-                      seguimiento de envíos.
+                    <p className="text-muted-foreground text-sm pt-1">
+                      Plataforma para punto de ventas para venta de muntiservicios.
                     </p>
                     <div className="flex justify-end">
                       <Link
-                        href="https://sistema.grupocazacargo.com"
+                        href="https://www.recargaloya.com"
                         target="_blank"
                       >
                         <Button variant={"outline"} size={"icon"}>
