@@ -200,35 +200,13 @@ export default function Home() {
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-4">
               <Card className="p-4 my-3 bg-muted mb-auto">
                 <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
-                  <Carousel
-                    className="mb-auto flex"
-                    opts={{
-                      align: "start",
-                      loop: true,
-                      duration: 500,
-                    }}
-                  >
-                    <CarouselContent>
-                      <CarouselItem>
-                        <Image
-                          className="rounded-md w-full"
-                          src="/port/grupocazacargo.png"
-                          width={200}
-                          height={200}
-                          alt="grupocazacargo"
-                        />
-                      </CarouselItem>
-                      <CarouselItem>
-                        <Image
-                          className="rounded-md w-full"
-                          src="/port/grupocazacargo1.png"
-                          width={200}
-                          height={200}
-                          alt="grupocazacargo"
-                        />
-                      </CarouselItem>
-                    </CarouselContent>
-                  </Carousel>
+                  <Image
+                    className="rounded-md w-full"
+                    src="/port/grupocazacargo.png"
+                    width={200}
+                    height={200}
+                    alt="grupocazacargo"
+                  />
                   <div>
                     <span className="flex my-1">
                       <Image
@@ -264,35 +242,13 @@ export default function Home() {
               </Card>
               <Card className="p-4 my-3 bg-muted mb-auto">
                 <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
-                  <Carousel
-                    className="mb-auto flex"
-                    opts={{
-                      align: "start",
-                      loop: true,
-                      duration: 500,
-                    }}
-                  >
-                    <CarouselContent>
-                      <CarouselItem>
-                        <Image
-                          className="rounded-md w-full"
-                          src="/port/reg1.png"
-                          width={200}
-                          height={200}
-                          alt="reg1"
-                        />
-                      </CarouselItem>
-                      <CarouselItem>
-                        <Image
-                          className="rounded-md w-full"
-                          src="/port/reg2.png"
-                          width={200}
-                          height={200}
-                          alt="reg2"
-                        />
-                      </CarouselItem>
-                    </CarouselContent>
-                  </Carousel>
+                  <Image
+                    className="rounded-md w-full"
+                    src="/port/reg1.png"
+                    width={200}
+                    height={200}
+                    alt="reg1"
+                  />
                   <div>
                     <span className="flex my-1">
                       <Image
