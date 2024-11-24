@@ -296,7 +296,7 @@ export default function Home() {
                 Privacidad | Legal | Cookies
               </div>
               <div className="order-3 xl:order-3 text-center xl:text-end">
-                v1.0.8
+                v1.2.8
               </div>
             </div>
           </footer>
