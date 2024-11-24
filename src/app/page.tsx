@@ -189,6 +189,9 @@ export default function Home() {
               />
             </div>
           </div>
+          <div className="mx-auto justify-center flex pb-4">
+            <ContactarJoffre />
+          </div>
           <div>
             <div className="flex font-semibold text-xl my-auto">
               <BookmarkIcon className="w-6 h-6 mr-2 my-auto" />
@@ -227,8 +230,17 @@ export default function Home() {
                   </Carousel>
                   <div>
                     <span className="flex my-1">
-                      <Image src="/port/logo1.webp" width={35} height={35} alt="logo1" className="mr-2 my-auto" />
-                      <span className="font-bold my-auto text-lg" style={{ color: '#1d4e9e' }}>
+                      <Image
+                        src="/port/logo1.webp"
+                        width={35}
+                        height={35}
+                        alt="logo1"
+                        className="mr-2 my-auto"
+                      />
+                      <span
+                        className="font-bold my-auto text-lg"
+                        style={{ color: "#1d4e9e" }}
+                      >
                         Grupo Cazacargo
                       </span>
                     </span>
@@ -281,16 +293,20 @@ export default function Home() {
                   </Carousel>
                   <div>
                     <span className="flex my-1">
-                      <Image src="/port/log_reg.webp" width={125} height={125} alt="log_reg" className="mr-2 my-auto" />
+                      <Image
+                        src="/port/log_reg.webp"
+                        width={125}
+                        height={125}
+                        alt="log_reg"
+                        className="mr-2 my-auto"
+                      />
                     </span>
                     <p className="text-muted-foreground text-sm pt-1">
-                      Plataforma para punto de ventas para venta de muntiservicios.
+                      Plataforma para punto de ventas para venta de
+                      muntiservicios.
                     </p>
                     <div className="flex justify-end">
-                      <Link
-                        href="https://www.recargaloya.com"
-                        target="_blank"
-                      >
+                      <Link href="https://www.recargaloya.com" target="_blank">
                         <Button variant={"outline"} size={"icon"}>
                           <ExternalLinkIcon className="w-4 h-4" />
                         </Button>
@@ -302,7 +318,12 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto justify-center flex py-4">
-            <ContactarJoffre />
+            <Link href="https://www.fastery.dev" target="_blank">
+              <Button variant={"secondary"} size={"lg"}>
+                <FolderOpenIcon className="w-6 h-6 my-auto" />
+                <span>Ver más proyectos</span>
+              </Button>
+            </Link>
           </div>
           <footer className="pb-2">
             <hr className="my-3 border-gray-300 sm:mx-auto lg:my-2.5" />

@@ -1,9 +1,5 @@
 import * as React from "react";
-import {
-  BriefcaseBusinessIcon,
-  MailIcon,
-  PhoneCallIcon,
-} from "lucide-react";
+import { BriefcaseBusinessIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -21,17 +17,15 @@ export function ContactarJoffre() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant={"secondary"}>
-          <BriefcaseBusinessIcon className="w-6 h-6 mr-2" />
-          Contactar a Joffre
+        <Button className="flex" variant={"secondary"}>
+          <BriefcaseBusinessIcon className="w-6 h-6 my-auto" />
+          <span className="my-auto">Contactar a Joffre</span>
         </Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
-            <DrawerTitle>
-                Hablemos de tu empresa
-            </DrawerTitle>
+            <DrawerTitle>Hablemos de tu empresa</DrawerTitle>
             <DrawerDescription>
               Tu idea es lo más importante, cuéntame y juntos la haremos
               realidad
@@ -50,12 +44,16 @@ export function ContactarJoffre() {
                 <MailIcon className="w-5 h-5" />
               </li>
               <li className="w-1 h-1 bg-gray-500 rounded-full"></li>
-              <li className="text-sm font-semibold">joffre.veloz@fastery.dev</li>
+              <li className="text-sm font-semibold">
+                joffre.veloz@fastery.dev
+              </li>
             </ul>
           </div>
           <DrawerFooter>
             <DrawerClose asChild>
-              <Button variant="outline" className="mb-4">Cancel</Button>
+              <Button variant="outline" className="mb-4">
+                Cancel
+              </Button>
             </DrawerClose>
           </DrawerFooter>
         </div>
