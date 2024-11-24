@@ -201,6 +201,7 @@ export default function Home() {
               <Card className="p-4 my-3 bg-muted mb-auto">
                 <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
                   <Carousel
+                    className="mb-auto flex"
                     opts={{
                       align: "start",
                       loop: true,
@@ -264,6 +265,7 @@ export default function Home() {
               <Card className="p-4 my-3 bg-muted mb-auto">
                 <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
                   <Carousel
+                    className="mb-auto flex"
                     opts={{
                       align: "start",
                       loop: true,
