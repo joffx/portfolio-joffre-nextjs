@@ -66,7 +66,7 @@ export default function Home() {
               <div className="text-2xl font-semibold">Joffre Andres Veloz</div>
               <div className="text-muted-foreground xl:text-base text-sm">
                 Full Stack Developer | CEO de Fastery.dev | Innovación y
-                Eficiencia en Desarrollo Web y Móvil
+                Estrategias en Desarrollo de Software
               </div>
             </div>
           </div>
