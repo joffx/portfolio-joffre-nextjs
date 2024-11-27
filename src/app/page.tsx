@@ -3,7 +3,6 @@ import { getDataUser } from "@/actions/conection-data";
 import { ContactarJoffre } from "@/components/drawer-demo";
 import NavbarHome from "@/components/home/navbar";
 import { ModeToggle } from "@/components/mode-toggle";
-import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -51,7 +50,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-transparent bg-grid-pattern bg-grid">
       <div className="flex items-center justify-center min-h-screen">
         <div className="px-4 py-5 max-w-[59rem] mx-auto">
           <NavbarHome />
@@ -306,7 +305,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <AnimatedGridPattern/>
+      {/* <AnimatedGridPattern/> */}
     </div>
   );
 }
