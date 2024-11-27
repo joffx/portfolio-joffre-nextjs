@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Joffre Andres Veloz Pazmiño 🧑‍💻",
-  description: "Joffre Andres Veloz Pazmiño 🧑‍💻"
+  description: "Joffre Andres Veloz Pazmiño 🧑‍💻",
+  authors: [],
 };
 
 export default function RootLayout({
@@ -18,12 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body  >
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           themes={["dark"]}
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
           {children}
