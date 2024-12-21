@@ -70,12 +70,23 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className="text-justify text-muted-foreground text-sm">
+          <p className="text-justify text-muted-foreground">
             Soy un apasionado de la tecnología y el desarrollo de software, con
             un fuerte interés en aprender continuamente y compartir mis
-            conocimientos. Actualmente, me desempeño como Gerente en mi propia
-            empresa, FASTERY DEV S.A.S., donde lidero el desarrollo y la gestión
-            de nuevos proyectos. Además, soy miembro activo de la comunidad de
+            conocimientos. Actualmente, me desempeño como Gerente en la empresa,
+            FASTERYSOLUTIONS S.A.S
+            {/* <Badge href="https://fastery.dev/">
+              <img
+                alt="GDG Ecuador logomark"
+                src="/icons/fastery.png"
+                className="!mr-1"
+                width="16"
+                height="16"
+              />
+              Fastery.dev
+            </Badge> */}
+            , donde lidero el desarrollo y la gestión de nuevos proyectos.
+            Además, soy miembro activo de la comunidad de
             <Badge href="https://gdg.community.dev/gdg-guayaquil/">
               <img
                 alt="GDG Ecuador logomark"
