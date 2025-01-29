@@ -59,7 +59,7 @@ export default function Home() {
             <div className="my-auto p-2">
               <div className="text-2xl font-semibold">Joffre Andres Veloz</div>
               <div className="text-muted-foreground xl:text-base text-sm">
-                Full Stack Developer | CEO de Fastery.dev | Innovación y
+                Full Stack Developer | CEO de Fasterydev | Innovación y
                 Estrategias en Desarrollo de Software
               </div>
             </div>
