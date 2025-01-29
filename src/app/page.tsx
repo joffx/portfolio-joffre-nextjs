@@ -67,7 +67,7 @@ export default function Home() {
           <p className="text-justify text-muted-foreground">
             Soy un apasionado de la tecnología y el desarrollo de software, con
             un fuerte interés en aprender continuamente y compartir mis
-            conocimientos. Actualmente, me desempeño como Gerente en la empresa,
+            conocimientos. Actualmente, me desempeño como Product Manager en la empresa,
             FASTERYSOLUTIONS S.A.S
             {/* <Badge href="https://fastery.dev/">
               <img
