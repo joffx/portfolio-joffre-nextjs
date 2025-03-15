@@ -65,24 +65,15 @@ export default function Home() {
             </div>
           </div>
           <p className="text-justify text-muted-foreground">
-            Soy un apasionado de la tecnología y el desarrollo de software, con
-            un fuerte interés en aprender continuamente y compartir mis
-            conocimientos. Actualmente, me desempeño como Product Manager en la empresa,
-            FASTERYSOLUTIONS S.A.S
-            {/* <Badge href="https://fastery.dev/">
-              <img
-                alt="GDG Ecuador logomark"
-                src="/icons/fastery.png"
-                className="!mr-1"
-                width="16"
-                height="16"
-              />
-              Fastery.dev
-            </Badge> */}
-            , donde lidero el desarrollo y la gestión de nuevos proyectos.
-            Además, soy miembro activo de la comunidad de
+            Soy Ingeniero en telecomunicaciones, apasionado por la tecnología y
+            el desarrollo de software.Me motiva el aprendizaje continuo y la
+            oportunidad de compartir conocimientos. Actualmente, me desempeño
+            como Director de Tecnología en la empresa, FASTERYSOLUTIONS S.A.S
+            , donde lidero estrategias tecnológicas e impulso la innovación para
+            el crecimiento de la empresa. Además, soy miembro activo de la
+            comunidad de
             <Badge href="https://gdg.community.dev/gdg-guayaquil/">
-              <img
+              <Image
                 alt="GDG Ecuador logomark"
                 src="/icons/gdg-logo.png"
                 className="!mr-1"
@@ -99,7 +90,7 @@ export default function Home() {
             especialización en arquitectura de microservicios. Soy experto en el
             desarrollo de aplicaciones utilizando
             <Badge href="https://flutter.dev/">
-              <img
+              <Image
                 alt="Flutter logomark"
                 src="/icons/flutter-logo.svg"
                 className="!mr-1"
@@ -110,7 +101,7 @@ export default function Home() {
             </Badge>
             así como en la creación de soluciones backend con
             <Badge href="https://nestjs.com/">
-              <img
+              <Image
                 alt="Nest.js logomark"
                 src="/icons/nest-logo.svg"
                 className="!mr-1"
@@ -121,7 +112,7 @@ export default function Home() {
             </Badge>
             y frontend con
             <Badge href="https://nextjs.org">
-              <img
+              <Image
                 alt="Next.js logomark"
                 src="/icons/next-logo.svg"
                 className="!mr-1"

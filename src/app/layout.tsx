@@ -10,8 +10,68 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Joffre Andres Veloz Pazmiño 🧑‍💻",
-  description: "Joffre Andres Veloz Pazmiño 🧑‍💻",
-  authors: [],
+  description: "Desarrollador de software con experiencia en tecnología y soluciones innovadoras.",
+  authors: [
+    { name: "Joffre Andres Veloz Pazmiño", url: "https://joffre.fastery.dev" },
+  ],
+  keywords: [
+    "Desarrollo Web",
+    "Next.js",
+    "JavaScript",
+    "React",
+    "Tecnología",
+  ],
+  applicationName: "Joffre's Portfolio",
+  generator: "Next.js",
+  referrer: "origin-when-cross-origin",
+  themeColor: "#000000",
+  colorScheme: "dark",
+  creator: "Joffre Andres Veloz Pazmiño",
+  publisher: "Joffre Andres Veloz Pazmiño",
+  formatDetection: {
+    email: false,
+    telephone: false,
+    address: false,
+  },
+  openGraph: {
+    title: "Joffre Andres Veloz Pazmiño 🧑‍💻",
+    description: "Portafolio de Joffre Andres Veloz Pazmiño",
+    url: "https://joffre.fastery.dev",
+    siteName: "Joffre's Portfolio",
+    images: [
+      {
+        url: "https://joffre.fastery.dev/imagen-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Joffre Andres Veloz Pazmiño",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tu_usuario",
+    creator: "@tu_usuario",
+    title: "Joffre Andres Veloz Pazmiño 🧑‍💻",
+    description: "Portafolio de Joffre Andres Veloz Pazmiño",
+    images: ["https://joffre.fastery.dev/imagen-twitter.jpg"],
+  },
+  robots: "index, follow",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "https://joffre.fastery.dev",
+    languages: {
+      es: "https://joffre.fastery.dev/es",
+      en: "https://joffre.fastery.dev/en",
+    },
+  },
+  category: "Technology",
 };
 
 export default function RootLayout({
