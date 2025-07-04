@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-justify text-muted-foreground">
-            Soy Ingeniero en telecomunicaciones, apasionado por la tecnología y
+            Apasionado por la tecnología y
             el desarrollo de software.Me motiva el aprendizaje continuo y la
             oportunidad de compartir conocimientos. Actualmente, me desempeño
             como Director de Tecnología en la empresa, FASTERYSOLUTIONS S.A.S
