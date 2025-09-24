@@ -1,37 +1,11 @@
 "use client";
 import { ContactarJoffre } from "@/components/drawer-demo";
 import NavbarHome from "@/components/home/navbar";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import {
-  BookmarkIcon,
-  BriefcaseBusinessIcon,
-  Code2Icon,
-  ExternalLinkIcon,
-  FolderOpenIcon,
-  HomeIcon,
-  PackageIcon,
-} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { toast } from "sonner";
-
-const showToasts = async () => {
-  setTimeout(() => {
-    toast(`👋 ¡Hola! Bienvenido a mi portafolio 🌟`);
-  }, 5000);
-};
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    showToasts();
-  }, []);
-
   function Badge(props: any) {
     return (
       <a
@@ -49,6 +23,7 @@ export default function Home() {
         <div className="px-4 py-5 max-w-[59rem] mx-auto">
           <NavbarHome />
           <div className="py-5 flex my-auto pt-16">
+          {/* <div className="py-5 flex my-auto"> */}
             <Avatar className="w-16 h-16 m-2">
               <AvatarImage
                 src="https://avatars.githubusercontent.com/u/52367350"
@@ -59,36 +34,22 @@ export default function Home() {
             <div className="my-auto p-2">
               <div className="text-2xl font-semibold">Joffre Andres Veloz</div>
               <div className="text-muted-foreground xl:text-base text-sm">
-                Full Stack Developer | CEO de Fasterydev | Innovación y
-                Estrategias en Desarrollo de Software
+                CEO & Founder at @FasteryDev | Full Stack Developer | Product
+                Strategy | Digital Innovation
               </div>
             </div>
           </div>
           <p className="text-justify text-muted-foreground">
-            Apasionado por la tecnología y
-            el desarrollo de software.Me motiva el aprendizaje continuo y la
-            oportunidad de compartir conocimientos. Actualmente, me desempeño
-            como Director de Tecnología en la empresa, FASTERYSOLUTIONS S.A.S
-            , donde lidero estrategias tecnológicas e impulso la innovación para
-            el crecimiento de la empresa. Además, soy miembro activo de la
-            comunidad de
-            <Badge href="https://gdg.community.dev/gdg-guayaquil/">
-              <Image
-                alt="GDG Ecuador logomark"
-                src="/icons/gdg-logo.png"
-                className="!mr-1"
-                width="16"
-                height="16"
-              />
-              GDG Guayaquil
-            </Badge>
-            donde se comparte conocimiento con otros profesionales y se
-            intercambian experiencias en el campo de la tecnología.
+            Apasionado por la tecnología, la innovación y el desarrollo de
+            software. Soy Fundador y CEO de FasteryDev, LLC (EE. UU.) y de
+            FASTERYSOLUTIONS S.A.S (Ecuador), donde lidero la visión de
+            producto, la estrategia empresarial y la creación de soluciones
+            digitales que impulsan el crecimiento.
             <br />
             <br />
-            Cuento con +3 años de experiencia en el desarrollo de software, con
-            especialización en arquitectura de microservicios. Soy experto en el
-            desarrollo de aplicaciones utilizando
+            Con más de 3 años de experiencia en desarrollo de software, me
+            especializo en arquitectura de microservicios, gestión de productos
+            digitales y el desarrollo de aplicaciones modernas utilizando
             <Badge href="https://flutter.dev/">
               <Image
                 alt="Flutter logomark"
@@ -99,7 +60,7 @@ export default function Home() {
               />
               Flutter
             </Badge>
-            así como en la creación de soluciones backend con
+            ,{" "}
             <Badge href="https://nestjs.com/">
               <Image
                 alt="Nest.js logomark"
@@ -109,8 +70,8 @@ export default function Home() {
                 height="14"
               />
               Nest.js
-            </Badge>
-            y frontend con
+            </Badge>{" "}
+            y{" "}
             <Badge href="https://nextjs.org">
               <Image
                 alt="Next.js logomark"
@@ -122,6 +83,35 @@ export default function Home() {
               Next.js
             </Badge>
             .
+            <br />
+            <br />
+            Además, participo activamente en comunidades como
+            <Badge href="https://gdg.community.dev/gdg-guayaquil/">
+              <Image
+                alt="GDG Ecuador logomark"
+                src="/icons/gdg-logo.png"
+                className="!mr-1"
+                width="16"
+                height="16"
+              />
+              GDG Ecuador
+            </Badge>
+            y
+            <Badge href="https://gdg.community.dev/gdg-guayaquil/">
+              <Image
+                alt="GDG Ecuador logomark"
+                src="/icons/gdg-logo.png"
+                className="!mr-1"
+                width="16"
+                height="16"
+              />
+              GDG Guayaquil
+            </Badge>
+            , compartiendo conocimientos y construyendo redes con otros
+            profesionales de la industria.
+            <br />
+            <br />
+            Editado: 23/09/2024
           </p>
           <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
             <div className="relative h-40">
@@ -188,97 +178,6 @@ export default function Home() {
           <div className="mx-auto justify-center flex pb-4">
             <ContactarJoffre />
           </div>
-          <div>
-            <div className="flex font-semibold text-xl my-auto">
-              <BookmarkIcon className="w-6 h-6 mr-2 my-auto" />
-              <span className="my-auto">Ultimos Proyectos</span>
-            </div>
-            <div className="grid xl:grid-cols-2 grid-cols-1 gap-4">
-              <Card className="p-4 my-3 bg-muted mb-auto">
-                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
-                  <Image
-                    className="rounded-md w-full"
-                    src="/port/grupocazacargo.png"
-                    width={200}
-                    height={200}
-                    alt="grupocazacargo"
-                  />
-                  <div>
-                    <span className="flex my-1">
-                      <Image
-                        src="/port/logo1.webp"
-                        width={35}
-                        height={35}
-                        alt="logo1"
-                        className="mr-2 my-auto"
-                      />
-                      <span
-                        className="font-bold my-auto text-lg"
-                        style={{ color: "#1d4e9e" }}
-                      >
-                        Grupo Cazacargo
-                      </span>
-                    </span>
-                    <p className="text-muted-foreground text-sm pt-1">
-                      Plataforma empresarial para la gestión de carga y
-                      seguimiento de envíos.
-                    </p>
-                    <div className="flex justify-end">
-                      <Link
-                        href="https://sistema.grupocazacargo.com"
-                        target="_blank"
-                      >
-                        <Button variant={"outline"} size={"icon"}>
-                          <ExternalLinkIcon className="w-4 h-4" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-              <Card className="p-4 my-3 bg-muted mb-auto">
-                <div className="grid xl:grid-cols-2 grid-cols-1 gap-3 mb-auto">
-                  <Image
-                    className="rounded-md w-full"
-                    src="/port/reg1.png"
-                    width={200}
-                    height={200}
-                    alt="reg1"
-                  />
-                  <div>
-                    <span className="flex my-1">
-                      <Image
-                        src="/port/log_reg.webp"
-                        width={125}
-                        height={125}
-                        alt="log_reg"
-                        className="mr-2 my-auto"
-                      />
-                    </span>
-                    <p className="text-muted-foreground text-sm pt-1">
-                      Plataforma para punto de ventas para venta de
-                      muntiservicios.
-                    </p>
-                    <div className="flex justify-end">
-                      <Link href="https://www.recargaloya.com" target="_blank">
-                        <Button variant={"outline"} size={"icon"}>
-                          <ExternalLinkIcon className="w-4 h-4" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
-          <div className="mx-auto justify-center flex py-4">
-            <Link href="https://www.fastery.dev" target="_blank">
-              <Button variant={"secondary"} size={"lg"}>
-                <FolderOpenIcon className="w-6 h-6 my-auto" />
-                <span>Ver más proyectos</span>
-              </Button>
-            </Link>
-          </div>
           <footer className="pb-2">
             <hr className="my-3 border-gray-300 sm:mx-auto lg:my-2.5" />
             <div className="grid xl:grid-cols-3 grid-cols-1 text-xs gap-1">
@@ -292,13 +191,10 @@ export default function Home() {
                 Privacidad | Legal | Cookies
               </div>
               <div className="order-3 xl:order-3 text-center xl:text-end">
-                v1.2.8
+                v1.2.9
               </div>
             </div>
           </footer>
-          <div className="justify-center  flex">
-            <ModeToggle />
-          </div>
         </div>
       </div>
     </div>
