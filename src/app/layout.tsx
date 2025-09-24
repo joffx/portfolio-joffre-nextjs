@@ -92,7 +92,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           themes={["dark"]}
-          enableSystem={false}
+          forcedTheme="dark"
           disableTransitionOnChange
         >
           <div className="relative h-screen w-screen">
