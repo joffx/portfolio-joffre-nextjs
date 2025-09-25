@@ -111,7 +111,7 @@ export default function Home() {
             profesionales de la industria.
             <br />
             <br />
-            Editado: 23/09/2024
+            Editado: 23/09/2025
           </p>
           <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
             <div className="relative h-40">
