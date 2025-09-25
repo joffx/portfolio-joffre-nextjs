@@ -23,7 +23,7 @@ export default function Home() {
         <div className="px-4 py-5 max-w-[59rem] mx-auto">
           <NavbarHome />
           <div className="py-5 flex my-auto pt-16">
-          {/* <div className="py-5 flex my-auto"> */}
+            {/* <div className="py-5 flex my-auto"> */}
             <Avatar className="w-16 h-16 m-2">
               <AvatarImage
                 src="https://avatars.githubusercontent.com/u/52367350"
@@ -180,11 +180,20 @@ export default function Home() {
           </div>
           <footer className="pb-2">
             <hr className="my-3 border-gray-300 sm:mx-auto lg:my-2.5" />
-            <div className="grid xl:grid-cols-3 grid-cols-1 text-xs gap-1">
-              <div className="italic grid grid-cols-1 order-2 xl:order-1 text-center xl:text-start">
-                <Link href="https://fastery.dev" target="_blank">
-                  <div>Developed by</div>
-                  <div>Fastery.dev</div>
+            <div className="grid xl:grid-cols-3 grid-cols-1 text-xs gap-1 items-center">
+              <div className=" grid grid-cols-1 order-2 xl:order-1 text-center xl:text-start">
+                <Link
+                  href="https://fastery.dev"
+                  target="_blank"
+                  className=" items-center gap-2 hover:opacity-80 transition"
+                >
+                  <span className="text-xs">Powered by</span>
+                  <Image
+                    src="/logo-fastery.svg"
+                    alt="logo-fastery"
+                    width={95}
+                    height={25}
+                  />
                 </Link>
               </div>
               <div className="text-center order-1 xl:order-2">
