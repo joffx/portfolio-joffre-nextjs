@@ -187,8 +187,9 @@ export default function Home() {
                   target="_blank"
                   className=" items-center gap-2 hover:opacity-80 transition"
                 >
-                  <span className="text-xs">Powered by</span>
+                  <span className="text-xs font-medium">Powered by</span>
                   <Image
+                    className="mx-auto xl:mx-0"
                     src="/logo-fastery.svg"
                     alt="logo-fastery"
                     width={95}
@@ -200,7 +201,7 @@ export default function Home() {
                 Privacidad | Legal | Cookies
               </div>
               <div className="order-3 xl:order-3 text-center xl:text-end">
-                v1.2.9
+                v1.3.0
               </div>
             </div>
           </footer>
