@@ -70,7 +70,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "https://joffre.fastery.dev",
     languages: {
