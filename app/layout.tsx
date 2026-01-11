@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  manifest: "/site.webmanifest",
+  manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "https://joffre.fastery.dev",
     languages: {
@@ -79,6 +79,13 @@ export const metadata: Metadata = {
     },
   },
   category: "Software Development",
+  metadataBase: new URL("https://joffre.fastery.dev"),
+  verification: {
+    // Añade tus códigos de verificación aquí cuando los tengas
+    // google: "tu-codigo-google",
+    // yandex: "tu-codigo-yandex",
+    // yahoo: "tu-codigo-yahoo",
+  },
 };
 
 export default function RootLayout({
@@ -86,8 +93,56 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // JSON-LD estructurado para SEO y LLMs
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Joffre Andres Veloz Pazmiño",
+    alternateName: "Joffre Veloz",
+    jobTitle: "CEO & Founder, Full Stack Developer",
+    worksFor: {
+      "@type": "Organization",
+      name: "FasteryDev, LLC",
+      url: "https://fastery.dev",
+    },
+    url: "https://joffre.fastery.dev",
+    image: "https://avatars.githubusercontent.com/u/52367350",
+    sameAs: [
+      "https://github.com/joffredev",
+      "https://twitter.com/joffredev",
+    ],
+    description:
+      "Desarrollador Full Stack con más de 3 años de experiencia. Fundador y CEO de FasteryDev, LLC y FASTERYSOLUTIONS S.A.S. Especializado en Next.js, React, Flutter y Nest.js.",
+    knowsAbout: [
+      "Next.js",
+      "React",
+      "Flutter",
+      "Nest.js",
+      "TypeScript",
+      "JavaScript",
+      "Arquitectura de Microservicios",
+      "Gestión de Productos Digitales",
+    ],
+    alumniOf: {
+      "@type": "Organization",
+      name: "GDG Ecuador",
+    },
+    memberOf: [
+      {
+        "@type": "Organization",
+        name: "GDG Guayaquil",
+      },
+    ],
+  };
+
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${outfit.className} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -104,7 +159,7 @@ export default function RootLayout({
               y={0}
               className={cn(
                 "absolute inset-0 h-screen w-screen",
-                "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+                "mask-[linear-gradient(to_bottom_right,white,transparent,transparent)]"
               )}
             />
             <Suspense fallback={null}>{children}</Suspense>

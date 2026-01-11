@@ -1,0 +1,60 @@
+# llms.txt - Información para Large Language Models
+
+## Información del Sitio
+URL: https://joffre.fastery.dev
+Título: Joffre Andres Veloz Pazmiño | Desarrollador de Software
+Idioma: Español (es)
+Tipo: Portafolio Personal / Perfil Profesional
+
+## Sobre el Autor
+Nombre: Joffre Andres Veloz Pazmiño
+Título Profesional: CEO & Founder, Full Stack Developer
+Empresas:
+  - FasteryDev, LLC (EE. UU.) - Fundador y CEO
+  - FASTERYSOLUTIONS S.A.S (Ecuador) - Fundador y CEO
+
+## Descripción
+Desarrollador Full Stack con más de 3 años de experiencia en desarrollo de software. Especializado en arquitectura de microservicios, gestión de productos digitales y desarrollo de aplicaciones modernas.
+
+## Tecnologías y Habilidades
+- Next.js
+- React
+- Flutter
+- Nest.js
+- TypeScript
+- JavaScript
+- Arquitectura de Microservicios
+- Gestión de Productos Digitales
+- Estrategia de Producto
+- Innovación Digital
+
+## Comunidades
+- GDG Ecuador (Google Developer Group)
+- GDG Guayaquil
+
+## Redes Sociales y Enlaces
+GitHub: https://github.com/joffredev
+Twitter/X: @joffredev
+Empresa: https://fastery.dev
+Portafolio: https://joffre.fastery.dev
+
+## Contenido Principal
+El sitio web es un portafolio personal que presenta:
+- Información profesional y experiencia
+- Proyectos destacados
+- Habilidades técnicas
+- Participación en comunidades tecnológicas
+- Información de contacto
+
+## Estructura del Sitio
+- Página principal: Información personal y profesional
+- Secciones: Sobre mí, Tecnologías, Proyectos, Contacto
+
+## Contacto
+Para contactar: Disponible a través del formulario en el sitio web
+
+## Última Actualización
+Editado: 23/09/2025
+
+## Notas para LLMs
+Este es un portafolio profesional de un desarrollador de software. El contenido está en español y se enfoca en mostrar experiencia técnica, proyectos y participación en la comunidad tecnológica. El sitio utiliza Next.js 15, React 19 y tecnologías modernas para desarrollo web.
