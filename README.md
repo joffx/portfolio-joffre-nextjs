@@ -97,20 +97,19 @@ portfolio-joffre-nextjs/
 │   ├── icons/             # Iconos y logos
 │   ├── photos/            # Imágenes del portafolio
 │   └── port/              # Imágenes de proyectos
-├── src/
-│   ├── app/               # App Router de Next.js
-│   │   ├── layout.tsx    # Layout principal
-│   │   ├── page.tsx      # Página de inicio
-│   │   ├── globals.css   # Estilos globales
-│   │   ├── sitemap.ts    # Sitemap dinámico
-│   │   └── robots.ts     # Robots.txt
-│   ├── components/        # Componentes React
-│   │   ├── home/         # Componentes de la página principal
-│   │   ├── ui/           # Componentes UI reutilizables
-│   │   └── ...
-│   ├── lib/              # Utilidades y helpers
-│   └── types/            # Definiciones de TypeScript
-├── components.json        # Configuración de shadcn/ui
+├── app/                   # App Router de Next.js
+│   ├── layout.tsx        # Layout principal
+│   ├── page.tsx          # Página de inicio
+│   ├── globals.css       # Estilos globales
+│   ├── sitemap.ts        # Sitemap dinámico
+│   └── robots.ts         # Robots.txt
+├── components/            # Componentes React
+│   ├── home/             # Componentes de la página principal
+│   ├── ui/               # Componentes UI reutilizables
+│   └── ...
+├── lib/                  # Utilidades y helpers
+├── types/                # Definiciones de TypeScript
+├── components.json       # Configuración de shadcn/ui
 ├── tailwind.config.ts    # Configuración de Tailwind
 ├── tsconfig.json         # Configuración de TypeScript
 └── package.json          # Dependencias y scripts
