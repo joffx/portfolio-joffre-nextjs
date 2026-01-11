@@ -1,7 +1,18 @@
 {
   "name": "joffre",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "private": true,
+  "author": {
+    "name": "Joffre Andres Veloz Pazmiño",
+    "email": "joffre@fastery.dev",
+    "url": "https://joffre.fastery.dev"
+  },
+  "license": "UNLICENSED",
+  "copyright": "Copyright (c) 2025 FasteryDev, LLC. All rights reserved.",
+  "repository": {
+    "type": "git",
+    "url": "private"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
