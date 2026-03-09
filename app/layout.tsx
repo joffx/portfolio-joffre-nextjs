@@ -13,8 +13,17 @@ const outfit = Outfit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0a0a0a",
+};
+
 export const metadata: Metadata = {
-  title: "Joffre Andres Veloz Pazmiño 🧑‍💻 | Desarrollador de Software",
+  title: {
+    default: "Joffre Andres Veloz Pazmiño 🧑‍💻 | Desarrollador de Software",
+    template: "%s | Joffre Andres Veloz",
+  },
   description:
     "Soy Joffre Andres Veloz Pazmiño, desarrollador de software especializado en crear soluciones digitales innovadoras con Next.js, React y tecnologías modernas.",
   authors: [

@@ -6,11 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  function Badge(props: any) {
+  function Badge(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
     return (
       <a
         {...props}
         target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center rounded-xl border border-neutral-200 bg-black px-2 py-1 mx-1 text-sm leading-4  no-underline dark:border-neutral-700 dark:bg-black text-white font-semibold "
       />
     );
@@ -22,6 +23,7 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-screen">
         <div className="px-4 py-5 max-w-[59rem] mx-auto">
           <NavbarHome />
+          <main>
           <div className="py-5 flex my-auto pt-16">
             {/* <div className="py-5 flex my-auto"> */}
             <Avatar className="w-16 h-16 m-2">
@@ -32,13 +34,17 @@ export default function Home() {
               <AvatarFallback>JV</AvatarFallback>
             </Avatar>
             <div className="my-auto p-2">
-              <div className="text-2xl font-semibold">Joffre Andres Veloz</div>
-              <div className="text-muted-foreground xl:text-base text-sm">
+              <h1 className="text-2xl font-semibold">Joffre Andres Veloz Pazmiño</h1>
+              <p className="text-muted-foreground xl:text-base text-sm">
                 CEO & Founder at @FasteryDev | Full Stack Developer | Product
                 Strategy | Digital Innovation
-              </div>
+              </p>
             </div>
           </div>
+          <section aria-labelledby="sobre-mi">
+            <h2 id="sobre-mi" className="sr-only">
+              Sobre mí
+            </h2>
           <p className="text-justify text-muted-foreground">
             Apasionado por la tecnología, la innovación y el desarrollo de
             software. Soy Fundador y CEO de FasteryDev, LLC (EE. UU.) y de
@@ -113,10 +119,15 @@ export default function Home() {
             <br />
             Editado: 23/09/2025
           </p>
+          </section>
+          <section aria-labelledby="galeria" className="my-8">
+            <h2 id="galeria" className="sr-only">
+              Galería
+            </h2>
           <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
             <div className="relative h-40">
               <Image
-                alt="Me speaking on stage at React Summit about the future of Next.js"
+                alt="Joffre Andres Veloz en evento de desarrollo"
                 src="/photos/expo.jpg"
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
@@ -126,7 +137,7 @@ export default function Home() {
             </div>
             <div className="relative sm:row-span-2 row-span-1">
               <Image
-                alt="Me standing on stage at Reactathon delivering the keynote"
+                alt="Joffre Andres Veloz en conferencia"
                 src="/photos/vuelo2.JPEG"
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
@@ -136,7 +147,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <Image
-                alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
+                alt="Joffre Andres Veloz en evento tech"
                 src="/photos/ioextended.JPEG"
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
@@ -146,7 +157,7 @@ export default function Home() {
             </div>
             <div className="relative row-span-2">
               <Image
-                alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+                alt="Joffre Andres Veloz"
                 src="/photos/yo.jpg"
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
@@ -156,7 +167,7 @@ export default function Home() {
             </div>
             <div className="relative row-span-2">
               <Image
-                alt="My badge on top of a pile of badges from a Vercel meetup we held"
+                alt="Joffre Andres Veloz en meetup"
                 src="/photos/expo2.jpg"
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
@@ -166,7 +177,7 @@ export default function Home() {
             </div>
             <div className="relative h-40">
               <Image
-                alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
+                alt="Joffre Andres Veloz en charla"
                 src="/photos/expo1.jpg"
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
@@ -175,9 +186,11 @@ export default function Home() {
               />
             </div>
           </div>
+          </section>
           <div className="mx-auto justify-center flex pb-4">
             <ContactarJoffre />
           </div>
+          </main>
           <footer className="pb-2">
             <hr className="my-3 border-gray-300 sm:mx-auto lg:my-2.5" />
             <div className="grid xl:grid-cols-3 grid-cols-1 text-xs gap-1 items-center">

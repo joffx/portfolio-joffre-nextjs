@@ -20,7 +20,7 @@ export default function NotFound() {
               /> */}
               <div className="absolute inset-0 flex items-center justify-center z-20">
                 <div className="text-white text-center p-6">
-                  <h2 className="text-2xl font-bold mb-2">¿Necesitas ayuda?</h2>
+                  <p className="text-2xl font-bold mb-2">¿Necesitas ayuda?</p>
                   <p className="text-white/90">
                     Estamos aquí para asistirte en encontrar lo que buscas
                   </p>
@@ -30,10 +30,10 @@ export default function NotFound() {
 
             <div className="p-6 md:p-8 flex flex-col">
               <div className="text-center md:text-left mb-6">
-                <h1 className="text-5xl font-bold text-primary mb-2">404</h1>
-                <h2 className="text-2xl font-semibold mb-4">
+                <p className="text-5xl font-bold text-primary mb-2" aria-hidden="true">404</p>
+                <h1 className="text-2xl font-semibold mb-4">
                   Página no encontrada
-                </h2>
+                </h1>
                 <p className="text-muted-foreground">
                   Lo sentimos, la página que estás buscando no existe o ha sido
                   movida.
